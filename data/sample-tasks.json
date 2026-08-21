@@ -1,0 +1,14 @@
+[
+  {
+    "studentName": "Rajani",
+    "topic": "Git",
+    "task": "Run git status, git add, git commit and git push",
+    "status": "Pending"
+  },
+  {
+    "studentName": "Rajani",
+    "topic": "TestNG",
+    "task": "Run only Login group using testng.xml",
+    "status": "In Progress"
+  }
+]

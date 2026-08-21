@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Task Tracker</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>Student Task Tracker</h1>
+    <p>Small Git practice web project using HTML, CSS, JavaScript and browser localStorage.</p>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Add Daily Practice Task</h2>
+      <form id="taskForm">
+        <label for="studentName">Student Name</label>
+        <input id="studentName" name="studentName" type="text" placeholder="Example: Rajani" required />
+
+        <label for="topic">Topic</label>
+        <select id="topic" name="topic" required>
+          <option value="">-- Select Topic --</option>
+          <option>Git</option>
+          <option>Manual Testing</option>
+          <option>Selenium</option>
+          <option>TestNG</option>
+          <option>API Testing</option>
+          <option>Debugging</option>
+        </select>
+
+        <label for="task">Task Description</label>
+        <textarea id="task" name="task" rows="3" placeholder="Example: Run git status and take screenshot" required></textarea>
+
+        <label for="status">Status</label>
+        <select id="status" name="status">
+          <option>Pending</option>
+          <option>In Progress</option>
+          <option>Completed</option>
+        </select>
+
+        <button type="submit">Save Task</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <div class="section-title-row">
+        <h2>Saved Tasks</h2>
+        <button id="clearTasks" class="secondary" type="button">Clear All</button>
+      </div>
+      <p class="note">Tasks are stored in this browser using localStorage. Refresh the page to verify that data remains.</p>
+      <div id="taskList" class="task-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Git Practice Project | Version 1.0</p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

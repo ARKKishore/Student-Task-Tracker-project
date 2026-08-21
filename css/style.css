@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+.app-header {
+  background: #1f3c88;
+  color: white;
+  padding: 24px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0 0 8px;
+}
+
+.container {
+  width: min(1000px, 94%);
+  margin: 24px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border: 1px solid #c8ceda;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #1f3c88;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+button.secondary {
+  background: #555;
+  margin-top: 0;
+}
+
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.note {
+  font-size: 14px;
+  color: #555;
+}
+
+.task-list {
+  margin-top: 12px;
+}
+
+.task-card {
+  border: 1px solid #dde3ef;
+  border-left: 5px solid #1f3c88;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: #fbfcff;
+}
+
+.task-card h3 {
+  margin: 0 0 6px;
+}
+
+.task-card p {
+  margin: 4px 0;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 20px;
+  background: #e6ecff;
+  font-size: 13px;
+}
+
+footer {
+  text-align: center;
+  padding: 18px;
+  color: #555;
+}
+
+@media (max-width: 720px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
